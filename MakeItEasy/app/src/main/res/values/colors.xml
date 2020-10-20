@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#056eaf</color>
+
+    <color name="appMainColor">#056eaf</color>
+
+    <!-- basic Colors -->
+    <color name="basic_black">#000000</color>
+    <color name="basic_red">#B70B08</color>
+    <color name="basic_white">#ffffff</color>
+
+    <!-- Dashboard Colors -->
+    <color name="Dashboard2_BlueShade">#86c5da</color>
+    <color name="Dashboard1_BlueShade">#85C1E9</color>
+    <color name="Dashboard3_BlueShade">#AED6F1</color>
+    <color name="Dashboard4_BlueShade">#7FB3D5</color>
+
+    <!-- Recycler View Gradient Colour -->
+    <color name="start_color">#056eaf</color>
+    <color name="end_color">#056eaf</color>
+    <color name="Criminal_Row">#000000</color>
+
+    <!-- Criminal Profile Colour -->
+    <color name="golden_brown">#b79040</color>
+
+
+
+</resources>

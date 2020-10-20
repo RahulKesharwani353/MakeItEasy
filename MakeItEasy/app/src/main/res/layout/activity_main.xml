@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/Splash_logo"
+        android:layout_width="349dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="433dp"
+        android:src="@drawable/makeiteasylogo"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/Splash_text"
+        android:layout_width="408dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="156dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/amarante"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:text="@string/appName"
+        android:textAlignment="center"
+        android:textColor="@color/basic_white"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Splash_logo"
+        app:layout_constraintVertical_bias="0.238" />
+
+
+    <ImageView
+        android:id="@+id/makeInIndiaLogo"
+        android:layout_width="447dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Splash_text"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/makeinindia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

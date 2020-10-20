@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1030590462192",
+    "firebase_url": "https://makeiteasy-a6e60.firebaseio.com",
+    "project_id": "makeiteasy-a6e60",
+    "storage_bucket": "makeiteasy-a6e60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030590462192:android:b0cf5490c003aa8cb2aa35",
+        "android_client_info": {
+          "package_name": "com.example.makeiteasyadmins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030590462192-f4n40ao2pm3ljv4e7qvd0vu3jc6et7co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy-5vrXxeptx_WOr6Fc0LeZ7JVwX5gcJI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030590462192-f4n40ao2pm3ljv4e7qvd0vu3jc6et7co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="150dp"-->
+<!--    android:layout_marginLeft="10dp"-->
+<!--    android:layout_marginRight="10dp"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--    android:id="@+id/card_view_1"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    app:cardCornerRadius="5dp"-->
+<!--    android:elevation="30sp"-->
+<!--  >-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginBottom="10dp">-->
+
+<!--        <TextView-->
+
+<!--            android:id="@+id/cv1_text1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:fontFamily="@font/muli"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:padding="3dp"-->
+<!--            android:text="Category 1"-->
+<!--            android:textSize="30dp"-->
+<!--            android:textStyle="bold" />-->
+<!--        <Button-->
+<!--            android:id="@+id/cv2_delete_btn"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="@drawable/ic_baseline_delete"/>-->
+<!--    </RelativeLayout>-->
+
+<!--</androidx.cardview.widget.CardView>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/black"
+    android:elevation="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:elevation="10dp"
+        android:id="@+id/card_view_2"
+        >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:padding="3dp"
+                    android:src="@drawable/play_button"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@android:color/black"
+                    android:outlineSpotShadowColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/cv3_text1"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:fontFamily="@font/patua_one"
+                    android:text="Text View 1"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:id="@+id/cv3_text2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="3dp"
+                    android:fontFamily="@font/patua_one"
+                    android:text="00:00"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/cv3_delete_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="@android:color/black"
+                    android:background="@drawable/ic_baseline_delete"/>
+            </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
