@@ -18,9 +18,7 @@ import com.example.makeiteasy.QuizCategory;
 import com.example.makeiteasy.QuizQuestions;
 import com.example.makeiteasy.R;
 import com.example.makeiteasy.model.QuizCategoryModel;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.FirebaseFirestore;
+
 
 import java.util.List;
 

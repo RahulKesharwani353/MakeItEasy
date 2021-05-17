@@ -1,34 +1,70 @@
 {
   "project_info": {
-    "project_number": "1030590462192",
-    "firebase_url": "https://makeiteasy-a6e60.firebaseio.com",
-    "project_id": "makeiteasy-a6e60",
-    "storage_bucket": "makeiteasy-a6e60.appspot.com"
+    "project_number": "1053759238692",
+    "project_id": "makeiteasy-app",
+    "storage_bucket": "makeiteasy-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1030590462192:android:b0cf5490c003aa8cb2aa35",
+        "mobilesdk_app_id": "1:1053759238692:android:9015ad9c475ab3218d5eb1",
         "android_client_info": {
-          "package_name": "com.example.makeiteasyadmins"
+          "package_name": "com.example.makeiteasy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1030590462192-f4n40ao2pm3ljv4e7qvd0vu3jc6et7co.apps.googleusercontent.com",
+          "client_id": "1053759238692-r677k43s78j1l3rqe43raelsq634abrr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.makeiteasy",
+            "certificate_hash": "3e69fe72bf399178d0a437e07a654c205bcd6618"
+          }
+        },
+        {
+          "client_id": "1053759238692-4o8tt62jl1oetfkq80ea8tks1j2saibe.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDy-5vrXxeptx_WOr6Fc0LeZ7JVwX5gcJI"
+          "current_key": "AIzaSyAtwOmJ8FqRpVj9t2voXwK5IQOVcMODFxw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1030590462192-f4n40ao2pm3ljv4e7qvd0vu3jc6et7co.apps.googleusercontent.com",
+              "client_id": "1053759238692-4o8tt62jl1oetfkq80ea8tks1j2saibe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053759238692:android:e6abbaa013cd7cd38d5eb1",
+        "android_client_info": {
+          "package_name": "com.example.makeiteasyadmins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053759238692-4o8tt62jl1oetfkq80ea8tks1j2saibe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtwOmJ8FqRpVj9t2voXwK5IQOVcMODFxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053759238692-4o8tt62jl1oetfkq80ea8tks1j2saibe.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

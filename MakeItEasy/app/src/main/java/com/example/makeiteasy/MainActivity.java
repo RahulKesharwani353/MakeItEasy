@@ -27,17 +27,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Animations
-        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
-        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
+        topAnim = AnimationUtils.loadAnimation(this, R.anim.fade);
+        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.fade);
 //Set animation to elements
         logo = findViewById(R.id.Splash_logo);
         title = findViewById(R.id.Splash_text);
-        makeInIndia = findViewById(R.id.makeInIndiaLogo);
 
 
         logo.setAnimation(topAnim);
         title.setAnimation(bottomAnim);
-        makeInIndia.setAnimation(bottomAnim);
 
         if (isOnline()){
             new Handler().postDelayed(new Runnable() {

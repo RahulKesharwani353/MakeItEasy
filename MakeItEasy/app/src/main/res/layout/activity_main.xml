@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
     tools:context=".MainActivity">
 
 
@@ -37,7 +36,7 @@
         android:paddingStart="15dp"
         android:text="@string/appName"
         android:textAlignment="center"
-        android:textColor="@color/basic_white"
+        android:textColor="#4A4A4A"
         android:textSize="65sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,18 +45,5 @@
         app:layout_constraintTop_toBottomOf="@+id/Splash_logo"
         app:layout_constraintVertical_bias="0.238" />
 
-
-    <ImageView
-        android:id="@+id/makeInIndiaLogo"
-        android:layout_width="447dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Splash_text"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/makeinindia" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
