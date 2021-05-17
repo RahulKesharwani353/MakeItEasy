@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteQuiz"
+    android:background="@drawable/bg_blue_gradiant">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:scaleType="centerCrop"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/well_done"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+    <TextView
+        android:id="@+id/testResultComplement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Just Completed Test"
+        android:textSize="35sp"
+        android:fontFamily="@font/aladin"
+        android:textStyle="bold"
+        android:textColor="@color/basic_white"
+        android:layout_centerInParent="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_toStartOf="@id/testResultComplement"
+       android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/medal"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/textview"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Score: "
+        android:textSize="25sp"
+        android:fontFamily="@font/aladin"
+        android:textStyle="bold"
+        android:textColor="@color/basic_white"
+       android:layout_below="@+id/testResultComplement"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/quiz_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/10"
+        android:textSize="25sp"
+        android:fontFamily="@font/aladin"
+        android:textStyle="bold"
+        android:textColor="@color/basic_white"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

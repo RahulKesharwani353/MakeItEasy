@@ -12,28 +12,57 @@
         android:layout_height="400dp"
         android:background="@drawable/bg_blue_gradiant"/>
     <TextView
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Question: 1"
+        android:text="Question:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/question_count"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:layout_marginStart="2dp"
+        android:layout_toRightOf="@+id/toolbar"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/Question_BOX"
+        android:id="@+id/question_BOX"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_marginTop="100dp"
-        android:text="Question Question Question kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
-        android:textSize="25dp"
+        android:text="Question Will Available Soon"
+        android:textSize="25sp"
+        android:textAlignment="center"
         android:layout_marginLeft="15sp"
         android:layout_marginRight="15sp"
         android:textColor="@color/basic_white"
         />
 
+<!--    <TextView-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:id="@+id/timer"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="1"-->
+<!--        android:layout_marginTop="-50dp"-->
+<!--        android:layout_below="@+id/grediant"-->
+<!--        android:background="@drawable/round_bg_black"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="40s"-->
+<!--        android:textStyle="bold" />-->
 
     <RelativeLayout
         android:layout_marginTop="-30dp"
@@ -42,6 +71,87 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:background="@drawable/top_rounded_white_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:padding="20dp">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="20dp"
+                android:maxLines="2"
+                android:background="@drawable/border_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/o1"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="20dp"
+                android:maxLines="2"
+                android:background="@drawable/border_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/o2"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textSize="20dp"
+                android:maxLines="2"
+                android:background="@drawable/border_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/o3"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:maxLines="2"
+                android:background="@drawable/border_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/o4"/>
+
+
+        </LinearLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_bg_black"
+            android:textColor="#FFAB00"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/submit_quiz"/>
+        <Button
+
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner_bg_yellow"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/next_que"/>
 
     </RelativeLayout>
 </RelativeLayout>

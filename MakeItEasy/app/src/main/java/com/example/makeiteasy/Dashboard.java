@@ -40,7 +40,7 @@ public class Dashboard extends AppCompatActivity {
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Dashboard.this,QuizQuestions.class));
+                startActivity(new Intent(Dashboard.this,QuizCategory.class));
             }
         });
 
