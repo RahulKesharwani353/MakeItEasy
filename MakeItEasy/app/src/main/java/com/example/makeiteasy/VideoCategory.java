@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
@@ -34,14 +35,14 @@ public class VideoCategory extends AppCompatActivity {
     FirebaseFirestore firebaseFirestore;
     VideoCategoriesAdapter adapter;
     private List<VidCatModel> vidCatList;
-    ProgressDialog loadingBar;
+    ProgressBar loadingBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_category);
 
-        loadingBar = new ProgressDialog(this);
+        loadingBar = findViewById(R.id.vc_progressBar);
         gridView = findViewById(R.id.vid_cat_gridView);
 
 
@@ -64,10 +65,13 @@ public class VideoCategory extends AppCompatActivity {
                             for (QueryDocumentSnapshot documentSnapshot: task.getResult()){
                                 vidCatList.add(new VidCatModel(documentSnapshot.get("vidCategory").toString()));
                             }
+                            loadingBar.setVisibility(View.GONE);
                             adapter.notifyDataSetChanged();
+
                         }
                         else {
-                            Toast.makeText(VideoCategory.this, "Error", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(VideoCategory.this, "Server Error", Toast.LENGTH_SHORT).show();
+                            loadingBar.setVisibility(View.GONE);
                         }
                     }
 

@@ -56,12 +56,12 @@ public class VideoCategoriesAdapter extends BaseAdapter {
     public View getView(final int position, View convertView, final ViewGroup parent) {
         View view;
         if (convertView==null){
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_2,parent,false);
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_1,parent,false);
         }
         else {
             view = convertView;
         }
-        ((TextView) view.findViewById(R.id.cv2_text1)).setText(vidCatList.get(position).getVidCategory());
+        ((TextView) view.findViewById(R.id.cv1_text1)).setText(vidCatList.get(position).getVidCategory());
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +69,8 @@ public class VideoCategoriesAdapter extends BaseAdapter {
                 Intent i = new Intent(context, VideoSubCategory.class);
                 i.putExtra(Keys.vidCatKey,vidCatList.get(position).getVidCategory());
                 v.getContext().startActivity(i);
+
+
             }
         });
         return view;

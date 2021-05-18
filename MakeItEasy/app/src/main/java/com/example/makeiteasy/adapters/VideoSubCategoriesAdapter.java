@@ -39,7 +39,7 @@ public class VideoSubCategoriesAdapter extends RecyclerView.Adapter<VideoSubCate
     @Override
     public myVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_1,parent,false);
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_2,parent,false);
         return new myVH(view);
     }
 
@@ -70,7 +70,7 @@ public class VideoSubCategoriesAdapter extends RecyclerView.Adapter<VideoSubCate
         TextView subCat;
         public myVH(@NonNull View itemView) {
             super(itemView);
-            subCat= itemView.findViewById(R.id.cv1_text1);
+            subCat= itemView.findViewById(R.id.cv2_text1);
         }
     }
 }

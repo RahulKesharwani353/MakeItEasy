@@ -3,6 +3,7 @@ package com.example.makeiteasy;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -45,7 +46,7 @@ public class VideoSubCategory extends AppCompatActivity {
         vidSubCatList = new ArrayList<>();
 
         firebaseFirestore = FirebaseFirestore.getInstance();
-        GridLayoutManager layoutManager = new GridLayoutManager(this,2);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         adapter = new VideoSubCategoriesAdapter(vidSubCatList,selectedCat,VideoSubCategory.this);

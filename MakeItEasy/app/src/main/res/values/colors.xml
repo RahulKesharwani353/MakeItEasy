@@ -24,6 +24,8 @@
 
     <!-- Criminal Profile Colour -->
     <color name="golden_brown">#b79040</color>
+    <color name="inactive">#C4C4C4</color>
+    <color name="active">#056eaf</color>
 
 
 

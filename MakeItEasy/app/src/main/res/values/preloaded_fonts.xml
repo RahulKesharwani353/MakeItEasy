@@ -2,5 +2,8 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/amarante</item>
+        <item>@font/montserrat</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/poppins_light</item>
     </array>
 </resources>

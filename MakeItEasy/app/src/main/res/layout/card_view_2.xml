@@ -41,7 +41,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="130dp"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:layout_marginTop="10dp"
@@ -50,16 +50,14 @@
     >
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-
-        android:padding="10dp"
+        android:layout_height="130dp"
         app:cardBackgroundColor="@color/basic_white"
         android:id="@+id/card_view_2"
         >
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="10dp">
+                >
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
@@ -71,14 +69,17 @@
                     android:id="@+id/cv2_text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="150dp"
-                    android:fontFamily="@font/muli"
-                    android:gravity="center_horizontal"
                     android:layout_centerVertical="true"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginEnd="45dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/muli"
+                    android:textAlignment="textStart"
+                    android:maxLines="2"
                     android:padding="3dp"
-                    android:textColor="#686868"
                     android:text="Category 1"
-                    android:textSize="30dp"
+                    android:textColor="#686868"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
                 <ImageView
                     android:layout_width="40dp"
