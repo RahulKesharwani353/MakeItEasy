@@ -36,7 +36,7 @@
         android:paddingStart="15dp"
         android:text="@string/appName"
         android:textAlignment="center"
-        android:textColor="#4496C5"
+        android:textColor="#59A4FF"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,5 +45,20 @@
         app:layout_constraintTop_toBottomOf="@+id/Splash_logo"
         app:layout_constraintVertical_bias="0.238" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:text="#Padhai"
+        android:textAlignment="center"
+        android:textColor="#59A4FF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Splash_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

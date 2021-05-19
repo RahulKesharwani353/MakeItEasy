@@ -18,7 +18,7 @@ public class AdminDashboard extends AppCompatActivity {
 
     private long mBackPressed;
     private static final int TIME_INTERVAL = 2000; // # milliseconds, desired time passed between two back presses.
-    Button video,quiz,btn3,logout;
+    Button video,quiz,addAdmin,logout;
 
 
     @Override
@@ -30,6 +30,7 @@ public class AdminDashboard extends AppCompatActivity {
         video = findViewById(R.id.db1_btn);
         logout= findViewById(R.id.bd4_btn);
         quiz = findViewById(R.id.db2_btn);
+        addAdmin = findViewById(R.id.bd5_btn);
 
 
         video.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +51,12 @@ public class AdminDashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AdminDashboard.this,QuizCategory.class));
+            }
+        });
+        addAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AdminDashboard.this,signupActivity.class));
             }
         });
 

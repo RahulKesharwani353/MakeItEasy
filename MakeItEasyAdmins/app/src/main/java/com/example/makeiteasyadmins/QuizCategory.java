@@ -82,7 +82,6 @@ public class QuizCategory extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(QuizCategory.this, "data aa gaya", Toast.LENGTH_SHORT).show();
                             for (DocumentSnapshot documentSnapshot: Objects.requireNonNull(task.getResult())){
                                 quizCatList.add(new QuizCategoryModel(documentSnapshot.get("quizCategory").toString()));
                             }
@@ -112,7 +111,6 @@ public class QuizCategory extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(QuizCategory.this, "Sub-Category added...", Toast.LENGTH_SHORT).show();
                 if (!quizCatName.getText().toString().equals(""))
                     setData();
                 else{
@@ -134,7 +132,7 @@ public class QuizCategory extends AppCompatActivity {
             public void onSuccess(Void aVoid) {
                 quizCatList.add(new QuizCategoryModel(quizCatName.getText().toString()));
                 adapter.notifyDataSetChanged();
-                Toast.makeText(QuizCategory.this, "Successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(QuizCategory.this, "Successfully ADDED", Toast.LENGTH_SHORT).show();
                 relativeLayout.setVisibility(View.GONE);
                 flag=0;
             }

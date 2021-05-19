@@ -88,7 +88,6 @@ public class VideoSubCategory extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(VideoSubCategory.this, "data aa gaya", Toast.LENGTH_SHORT).show();
                             for (DocumentSnapshot documentSnapshot: Objects.requireNonNull(task.getResult())){
                                 vidSubCatList.add(new VidSubCatModel(documentSnapshot.get("vidSubCategory").toString()));
                             }
@@ -118,7 +117,7 @@ public class VideoSubCategory extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(VideoSubCategory.this, "Sub-Category added...", Toast.LENGTH_SHORT).show();
+
                 if (!subCatName.getText().toString().equals(""))
                     setData();
                 else{

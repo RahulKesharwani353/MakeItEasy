@@ -55,7 +55,7 @@
         android:elevation="10dp"
         app:cardCornerRadius="10dp"
         android:id="@+id/card_view_2"
-        android:background="#000000"
+        app:cardBackgroundColor="@color/basic_white"
         >
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -97,7 +97,7 @@
                     android:text="00:00"
                     android:textSize="20dp"
                     android:maxLines="1"
-
+                    android:textColor="#8F8E8E"
                     android:textStyle="bold" />
 
                 <Button

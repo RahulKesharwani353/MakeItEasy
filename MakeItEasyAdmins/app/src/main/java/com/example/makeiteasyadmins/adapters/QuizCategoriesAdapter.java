@@ -1,6 +1,7 @@
 package com.example.makeiteasyadmins.adapters;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.makeiteasyadmins.Keys;
@@ -47,7 +49,7 @@ public class QuizCategoriesAdapter extends RecyclerView.Adapter<QuizCategoriesAd
     @Override
     public void onBindViewHolder(@NonNull myVH holder, final int position) {
 
-       final QuizCategoriesAdapter a =this;
+        final QuizCategoriesAdapter a =this;
         holder.subCat.setText(quizCatList.get(position).getQuizCategory());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +62,21 @@ public class QuizCategoriesAdapter extends RecyclerView.Adapter<QuizCategoriesAd
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                deleteData(quizCatList.get(position).getQuizCategory(),a);
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+
+                builder.setMessage("All the quiz questions will be delete permanently and cannot be restore.\n\nAre you sure to Delete")
+                        .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                deleteData(quizCatList.get(position).getQuizCategory(),a);
+                            }
+                        })
+                        .setNegativeButton("Cancel",null);
+
+                AlertDialog alert = builder.create();
+                alert.show();
+
+
             }
         });
 

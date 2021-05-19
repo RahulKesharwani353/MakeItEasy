@@ -28,7 +28,7 @@ public class Dashboard extends AppCompatActivity {
     private static final int TIME_INTERVAL = 2000; // # milliseconds, desired time passed between two back presses.
     private long mBackPressed;
     NavigationView nav_view;
-    private Button video, quiz, scholars, team;
+    private Button video, quiz, scholars, team, notification;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,7 @@ public class Dashboard extends AppCompatActivity {
         quiz= findViewById(R.id.db2_btn);
         scholars = findViewById(R.id.bd4_btn);
         team = findViewById(R.id.db5_btn);
+        notification = findViewById(R.id.bd3_btn);
         nav_view = findViewById(R.id.nav_view);
 
         quiz.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +77,13 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Dashboard.this,teamAvtivity.class));
+
+            }
+        });
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Dashboard.this,NoticifationActivity.class));
 
             }
         });
@@ -140,9 +148,10 @@ public class Dashboard extends AppCompatActivity {
     }
 
     public void composeEmail() {
+        String[] to = {"makeiteasy1211@gmail.com"};
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_EMAIL, "makeiteasy1211@gmail.com");
+        intent.putExtra(Intent.EXTRA_EMAIL, to);
         intent.putExtra(Intent.EXTRA_SUBJECT, "");
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
