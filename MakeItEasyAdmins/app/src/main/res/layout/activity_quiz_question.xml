@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestion"
+    android:background="@color/basic_white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3F51B5"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Quiz Question"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_ques_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        android:elevation="20dp"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quiz_que_recyclerVoew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/addQuizQuestion_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_blacky_transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+     >
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Question"
+                app:boxStrokeWidth="5dp"
+                android:textColorHint="@android:color/holo_orange_light"
+                app:hintTextAppearance="@android:color/holo_orange_light"
+                app:boxBackgroundColor="@android:color/black"
+                android:foregroundTint="@android:color/holo_orange_light"
+                app:boxStrokeColor="@android:color/holo_orange_light"
+                android:outlineAmbientShadowColor="@android:color/holo_orange_light"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_quiz_que"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@android:color/holo_orange_light"
+                    android:inputType="textLongMessage"
+                    android:textColor="@android:color/holo_orange_light"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="0.5"
+                    android:hint="Option1"
+                    app:boxStrokeWidth="5dp"
+                    android:textColorHint="@android:color/holo_orange_light"
+                    app:hintTextAppearance="@android:color/holo_orange_light"
+                    app:boxBackgroundColor="@android:color/black"
+                    android:foregroundTint="@android:color/holo_orange_light"
+                    app:boxStrokeColor="@android:color/holo_orange_light"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_quiz_op1"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/holo_orange_light"
+                        android:inputType="text"
+                        android:textColor="@android:color/holo_orange_light"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="0.5"
+                    android:hint="Option2"
+                    app:boxStrokeWidth="5dp"
+                    android:textColorHint="@android:color/holo_orange_light"
+                    app:hintTextAppearance="@android:color/holo_orange_light"
+                    app:boxBackgroundColor="@android:color/black"
+                    android:foregroundTint="@android:color/holo_orange_light"
+                    app:boxStrokeColor="@android:color/holo_orange_light"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_quiz_op2"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/holo_orange_light"
+                        android:inputType="text"
+                        android:textColor="@android:color/holo_orange_light"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="0.5"
+                    android:hint="Option3"
+                    app:boxStrokeWidth="5dp"
+                    android:textColorHint="@android:color/holo_orange_light"
+                    app:hintTextAppearance="@android:color/holo_orange_light"
+                    app:boxBackgroundColor="@android:color/black"
+                    android:foregroundTint="@android:color/holo_orange_light"
+                    app:boxStrokeColor="@android:color/holo_orange_light"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_quiz_op3"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/holo_orange_light"
+                        android:inputType="text"
+                        android:textColor="@android:color/holo_orange_light"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="0.5"
+                    android:hint="Option4"
+                    app:boxStrokeWidth="5dp"
+                    android:textColorHint="@android:color/holo_orange_light"
+                    app:hintTextAppearance="@android:color/holo_orange_light"
+                    app:boxBackgroundColor="@android:color/black"
+                    android:foregroundTint="@android:color/holo_orange_light"
+                    app:boxStrokeColor="@android:color/holo_orange_light"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_quiz_op4"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/holo_orange_light"
+                        android:inputType="text"
+                        android:textColor="@android:color/holo_orange_light"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="0.5"
+                    android:hint="Question No"
+                    app:boxStrokeWidth="5dp"
+                    android:textColorHint="@android:color/holo_orange_light"
+                    app:hintTextAppearance="@android:color/holo_orange_light"
+                    app:boxBackgroundColor="@android:color/black"
+                    android:foregroundTint="@android:color/holo_orange_light"
+                    app:boxStrokeColor="@android:color/holo_orange_light"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_quiz_que_no"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/holo_orange_light"
+                        android:inputType="number"
+                        android:textColor="@android:color/holo_orange_light"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_columnWeight="0.5"
+                    android:layout_height="wrap_content"
+                    android:hint="correct Option"
+                    app:boxStrokeWidth="5dp"
+                    android:textColorHint="@android:color/holo_orange_light"
+                    app:hintTextAppearance="@android:color/holo_orange_light"
+                    app:boxBackgroundColor="@android:color/black"
+                    android:foregroundTint="@android:color/holo_orange_light"
+                    app:boxStrokeColor="@android:color/holo_orange_light"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_quiz_que_correct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/holo_orange_light"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@android:color/holo_orange_light"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </GridLayout>
+
+            <Button
+                android:id="@+id/add_quiz_que_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_bg_black"
+                android:elevation="15sp"
+                android:text="Add Question"
+                android:textColor="@android:color/holo_orange_light" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

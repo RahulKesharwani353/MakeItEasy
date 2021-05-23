@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class AdminLogin extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-    private TextInputEditText email, password;
+    private EditText email, password;
     private Button singInBtn;
     private ProgressDialog loadingBar;
     @Override

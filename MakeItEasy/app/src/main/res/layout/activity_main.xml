@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
     tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/Splash_logo"
         android:layout_width="349dp"
-        android:layout_height="172dp"
+        android:layout_height="400dp"
         android:layout_marginStart="86dp"
-        android:layout_marginTop="67dp"
+        android:layout_marginTop="79dp"
         android:layout_marginEnd="86dp"
         android:layout_marginBottom="433dp"
-        android:src="@drawable/makeiteasylogo"
+        android:src="@drawable/splash"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,13 +31,13 @@
         android:layout_marginTop="39dp"
         android:layout_marginBottom="156dp"
         android:elevation="20dp"
-        android:fontFamily="@font/amarante"
+        android:fontFamily="@font/montserrat"
         android:padding="10dp"
         android:paddingStart="15dp"
         android:text="@string/appName"
         android:textAlignment="center"
-        android:textColor="@color/basic_white"
-        android:textSize="65sp"
+        android:textColor="#59A4FF"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -46,18 +45,20 @@
         app:layout_constraintTop_toBottomOf="@+id/Splash_logo"
         app:layout_constraintVertical_bias="0.238" />
 
-
-    <ImageView
-        android:id="@+id/makeInIndiaLogo"
-        android:layout_width="447dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:text="#Padhai"
+        android:textAlignment="center"
+        android:textColor="#59A4FF"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Splash_text"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/makeinindia" />
+        app:layout_constraintTop_toBottomOf="@+id/Splash_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

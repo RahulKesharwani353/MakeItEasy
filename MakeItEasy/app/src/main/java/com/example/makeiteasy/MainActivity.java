@@ -2,6 +2,7 @@ package com.example.makeiteasy;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,13 +11,15 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     Animation topAnim, bottomAnim;
     ImageView logo, makeInIndia;
@@ -26,18 +29,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*white Status bar*/
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.basic_white)); // Navigation bar the soft bottom of some phones like nexus and some Samsung note series
+        getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.basic_white));
+
+
         //Animations
-        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
-        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
+        topAnim = AnimationUtils.loadAnimation(this, R.anim.fade);
+        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.fade);
 //Set animation to elements
         logo = findViewById(R.id.Splash_logo);
         title = findViewById(R.id.Splash_text);
-        makeInIndia = findViewById(R.id.makeInIndiaLogo);
 
 
         logo.setAnimation(topAnim);
         title.setAnimation(bottomAnim);
-        makeInIndia.setAnimation(bottomAnim);
 
         if (isOnline()){
             new Handler().postDelayed(new Runnable() {
@@ -45,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 public void run() {
                     Intent intent = new Intent(MainActivity.this, Dashboard.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     finish();
                 }
             }, 2000);
@@ -70,16 +78,16 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         );
 
+
+        Intent intentBackgroundService = new Intent(this, notificationService.class);
+        startService(intentBackgroundService);
+
     }
 
     public boolean isOnline() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
-        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
-            return true;
-        } else {
-            return false;
-        }
+        return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 
 }

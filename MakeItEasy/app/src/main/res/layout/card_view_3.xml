@@ -43,7 +43,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="120dp"
-    android:background="#023B5E"
+
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     android:layout_marginTop="10dp"
@@ -52,48 +52,49 @@
     >
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="119dp"
+        android:layout_height="200dp"
         android:id="@+id/card_view_2"
         >
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp">
+                android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="95dp"
-                    android:layout_height="95dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
                     android:padding="3dp"
+                    android:layout_marginStart="7dp"
                     android:src="@drawable/play_button"
                     android:layout_centerVertical="true"
-                    android:backgroundTint="@android:color/black"
-                    android:outlineSpotShadowColor="@android:color/black"/>
+                    />
 
                 <TextView
                     android:id="@+id/cv3_text1"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
+                    android:layout_marginStart="80dp"
                     android:padding="3dp"
                     android:maxLines="1"
-                    android:fontFamily="@font/baloo"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat"
+                    android:textStyle="bold"
                     android:text="Text View 1"
-                    android:textSize="25sp"
-                    android:textColor="@android:color/black"/>
+                    android:textSize="20sp"
+                    android:textColor="#555555"/>
                 <TextView
                     android:id="@+id/cv3_text2"
                     android:layout_marginBottom="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-
-                    android:layout_marginEnd="20dp"
-                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="80dp"
+                    android:layout_below="@id/cv3_text1"
+                    android:layout_marginTop="3dp"
                     android:padding="3dp"
-                    android:fontFamily="@font/baloo"
+                    android:fontFamily="@font/muli"
+                    android:textColor="#787878"
                     android:text="00:00"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
+                    android:textSize="15dp"
+
                   />
 
             </RelativeLayout>-

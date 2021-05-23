@@ -3,4 +3,15 @@
     <string name="appName">Make It Easy</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    //Headings
+    <string name="heading_one">Become Our Scholar Member</string>
+    <string name="heading_two">Complete Notes &amp; Sample Papers</string>
+    <string name="heading_three">Live Doubts Clearing</string>
+    <string name="heading_fourth">One-On-One Mentorship</string>
+
+    //Description
+    <string name="desc_one">Make it easy #padhai is a platform every aspiring student should have it as a tool to learn, so becoming a scholar member can help students get through every difficulty in learning, classes and exams.</string>
+    <string name="desc_two">Providing complete notes and sample paper of each unit will help students to get through revision cycles more appropriately. It helps in keeping in touch with the subject as well as possible to memorise the tough topics. </string>
+    <string name="desc_three">Live doubt clearing session will be provided as a learning process for students and at the same time they can clear out their doubts related to anything about the subject matter. </string>
+    <string name="desc_fourth">One on one mentorship will be provide to everyone which will help students to reach out the mentor and build a relationship between so that they can freely ask questions and answer at the same manner</string>
 </resources>

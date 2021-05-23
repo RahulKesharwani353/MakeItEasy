@@ -8,7 +8,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="25sp"
     android:elevation="30sp"
-    app:cardBackgroundColor="#FF8A80">
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blue_grad"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -19,12 +23,16 @@
             android:id="@+id/cv1_text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_centerInParent="true"
             android:fontFamily="@font/muli"
             android:gravity="center_horizontal"
             android:padding="3dp"
             android:text="Category 1"
-            android:textSize="30dp"
+            android:textSize="20dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#FDFDFD"
             android:textStyle="bold" />
         <Button
             android:id="@+id/cv1_delete_btn"
@@ -33,6 +41,7 @@
             android:layout_alignParentEnd="true"
             android:padding="5dp"
             android:layout_alignParentBottom="true"
+            android:backgroundTint="#E8E8E8"
             android:background="@drawable/ic_baseline_delete"/>
     </RelativeLayout>
 

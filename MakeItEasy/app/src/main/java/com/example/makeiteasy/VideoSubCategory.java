@@ -3,33 +3,23 @@ package com.example.makeiteasy;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.makeiteasy.adapters.VideoSubCategoriesAdapter;
 import com.example.makeiteasy.model.VidSubCatModel;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 
 public class VideoSubCategory extends AppCompatActivity {
@@ -45,6 +35,7 @@ public class VideoSubCategory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_sub_category);
 
+        
         selectedCat = getIntent().getStringExtra(Keys.vidCatKey);
         toolbar =findViewById(R.id.vid_sub_cat_title);
         toolbar.setText(selectedCat);
@@ -55,7 +46,7 @@ public class VideoSubCategory extends AppCompatActivity {
         vidSubCatList = new ArrayList<>();
 
         firebaseFirestore = FirebaseFirestore.getInstance();
-        GridLayoutManager layoutManager = new GridLayoutManager(this,2);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         adapter = new VideoSubCategoriesAdapter(vidSubCatList,selectedCat,VideoSubCategory.this);

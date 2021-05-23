@@ -13,7 +13,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuizQuestions"></activity>
+        <activity android:name=".NoticifationActivity"></activity>
+        <activity android:name=".QRDisplay" />
+        <activity
+            android:name=".teamAvtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScholarsSlider"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScholarsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompleteQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QuizQuestions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QuizCategory"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".VideoLecture"
             android:screenOrientation="portrait" />
@@ -41,6 +60,12 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".notificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

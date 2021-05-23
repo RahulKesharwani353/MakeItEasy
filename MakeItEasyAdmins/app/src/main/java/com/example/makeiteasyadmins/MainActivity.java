@@ -2,6 +2,7 @@ package com.example.makeiteasyadmins;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,15 +11,22 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*white Status bar*/
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.basic_white)); // Navigation bar the soft bottom of some phones like nexus and some Samsung note series
+        getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.basic_white));
 
         if (isOnline()){
             new Handler().postDelayed(new Runnable() {

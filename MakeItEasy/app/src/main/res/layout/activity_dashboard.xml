@@ -180,12 +180,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="45dp"
+                        android:layout_marginLeft="35dp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/baloo"
                         android:includeFontPadding="false"
                         android:padding="15dp"
-                        android:text="Live Doubt\nSession"
+                        android:text="JOIN Scholars"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="30sp" />
@@ -213,7 +213,7 @@
                     android:layout_marginRight="0dp"
                     android:layout_centerInParent="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/live" />
+                    android:src="@drawable/trophy" />
 
             </RelativeLayout>
 
@@ -280,7 +280,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp">
+                android:layout_marginBottom="20dp">
 
                 <RelativeLayout
 

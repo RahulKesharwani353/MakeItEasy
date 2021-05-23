@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teamAvtivity"
+    android:background="@drawable/bg_blue_gradiant"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:text="OUR TEAM"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+    >
+
+<!--    *************************start*************-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/round_white_b">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Vinay Mishra"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Project Lead"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="17sp" />
+        </RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/vinay"
+            app:civ_border_width="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="#7E7E7E"/>
+    </RelativeLayout>
+<!--************************************************-->
+
+
+    <!--    *************************start*************-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/round_white_b">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Shriyash Karnik"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Project Manager"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="17sp" />
+        </RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/shriyansh"
+            app:civ_border_width="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="#7E7E7E"/>
+    </RelativeLayout>
+    <!--************************************************-->
+
+    <!--    *************************start*************-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/round_white_b">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Mohit Dhamejani"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Resource Manager"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="17sp" />
+        </RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/mohi"
+            app:civ_border_width="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="#7E7E7E"/>
+    </RelativeLayout>
+    <!--************************************************-->
+
+    <!--    *************************start*************-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/round_white_b">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Manas Sharma"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Content Manager"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="17sp" />
+        </RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/manas"
+            app:civ_border_width="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="#7E7E7E"/>
+    </RelativeLayout>
+    <!--************************************************-->
+
+    <!--    *************************start*************-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/round_white_b">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Shiv Dutta Mishra"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="60dp"
+                android:fontFamily="@font/montserrat"
+                android:includeFontPadding="false"
+                android:padding="15dp"
+                android:text="Senior Faculty"
+                android:textAlignment="center"
+                android:textColor="#4A4A4A"
+                android:textSize="17sp" />
+        </RelativeLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/shiv"
+            app:civ_border_width="2dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="#7E7E7E"/>
+    </RelativeLayout>
+    <!--************************************************-->
+
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -84,7 +84,6 @@ public class VideoLectures extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(VideoLectures.this, "data..", Toast.LENGTH_SHORT).show();
                             for (DocumentSnapshot documentSnapshot: Objects.requireNonNull(task.getResult())){
                                 vidLecList.add(new VidLecModel(documentSnapshot.get("vidLecTopic").toString(),
                                         documentSnapshot.get("vidLecDuration").toString(),

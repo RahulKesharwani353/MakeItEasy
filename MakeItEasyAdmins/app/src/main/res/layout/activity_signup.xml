@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupActivity"
+    android:background="@color/basic_white">
+<ImageView
+    android:id="@+id/sign_up_img"
+    android:layout_width="match_parent"
+    android:layout_marginTop="70dp"
+    android:layout_height="280dp"
+    android:src="@drawable/signup"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sign_up_img"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Add new admin"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="30dp"
+                 />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_rounded"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:hint="Email"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#393939"
+                android:textColorHint="#BF858585"
+                android:id="@+id/signup_email"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_rounded"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:hint="Password (minimum 6 char)"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#393939"
+                android:textColorHint="#BF858585"
+                android:id="@+id/signup_password"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_rounded"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#393939"
+                android:textColorHint="#BF858585"
+                android:id="@+id/signup_conf_pass"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_bg_blue"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#FFFFFF"
+                android:text="Add New Admin"
+                android:textSize="20dp"
+                android:id="@+id/signup_btn"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

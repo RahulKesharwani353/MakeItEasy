@@ -46,7 +46,6 @@
     android:layout_marginRight="10dp"
     android:layout_marginTop="10dp"
     android:layout_marginBottom="10dp"
-    android:background="@android:color/black"
     android:elevation="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
@@ -54,7 +53,9 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:elevation="10dp"
+        app:cardCornerRadius="10dp"
         android:id="@+id/card_view_2"
+        app:cardBackgroundColor="@color/basic_white"
         >
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -77,9 +78,11 @@
                     android:layout_marginLeft="150dp"
                     android:gravity="center_horizontal"
                     android:padding="3dp"
-                    android:fontFamily="@font/patua_one"
+                    android:fontFamily="@font/muli"
                     android:text="Text View 1"
-                    android:textSize="30dp"
+                    android:textSize="25dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
                     android:textStyle="bold"
                     android:textColor="@android:color/black"/>
                 <TextView
@@ -93,6 +96,8 @@
                     android:fontFamily="@font/patua_one"
                     android:text="00:00"
                     android:textSize="20dp"
+                    android:maxLines="1"
+                    android:textColor="#8F8E8E"
                     android:textStyle="bold" />
 
                 <Button
