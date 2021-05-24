@@ -13,9 +13,6 @@ MakeItEasy lets a user:
 4. Cloud Notifications
 5. User can become **Scholars Student** by paying certain fees.
 
-### App Icon 
-
-![ProductMarketingAdMaker_18062020_020518](https://user-images.githubusercontent.com/65972077/119341311-3d620780-bcb1-11eb-8d1a-c1b949bd7fd7.png)
 
 ## Main Logo 
 
@@ -40,27 +37,16 @@ User is presented with a dashboard which conatins tabs:
 
 ### Screenshot
 - Dashboard
-<img src = "https://user-images.githubusercontent.com/65972077/119342353-954d3e00-bcb2-11eb-9750-e14ca1be911f.jpg" width="450" hight ="200">
-<img src = "https://user-images.githubusercontent.com/65972077/119342353-954d3e00-bcb2-11eb-9750-e14ca1be911f.jpg" width="450" hight ="200">
+
+<img src = "https://user-images.githubusercontent.com/65972077/119342878-4f44aa00-bcb3-11eb-8130-f0d5773ed0ac.jpg" width="200" hight ="350">      <img src = "https://user-images.githubusercontent.com/65972077/119342353-954d3e00-bcb2-11eb-9750-e14ca1be911f.jpg" width="200" hight ="350">
+
+- Video Lecture
+
+<img src = "https://user-images.githubusercontent.com/65972077/119342926-5cfa2f80-bcb3-11eb-99a7-e4b2491b9cfb.jpg" width="200" hight ="350">       <img src = "https://user-images.githubusercontent.com/65972077/119342933-61264d00-bcb3-11eb-96d8-d3a08e8f1c77.jpg" width="200" hight ="350">
 
 
-### About the Hospital
-**About Hospital** section is all about the information or details regarding hospitals, doctors and also some other stuffs.
-
-![Aiims](https://user-images.githubusercontent.com/63740580/96362076-62553180-1148-11eb-8981-f5bea82c9ea5.png)
-### About SOS feature:
-
-SOS is an emergency feature where user can call for:
-- An ambulance
-- Directly call the Hospital
-- Report a road accident
-- Call for covid-19 Response
-
-
-![sosscreen](https://user-images.githubusercontent.com/63740580/96360720-2072be00-113d-11eb-801f-7c29aa937563.png)
-
-## Admin App
-This is the companion app for the main User App(Medicall)
+<!-- ## Admin App
+This is the companion app for the main User App(MakeItEasy)
 
 This is the app that would be used by the hospitals to track the number of patients, thier booking dates and scan the unique code provided by the user to verify the details of the patient.
 
@@ -80,10 +66,10 @@ Implementaion of barcode provides every appointment with a unique Id for identif
 - zxing core, budiyev (libraries)
 - Firebase: For backend services like Authentication
 - Adobe xD: For user experience and Prototyping.
- 
+  -->
 
-# Team Code Brigade (Contributors)
+<!-- # Team Code Brigade (Contributors)
 - [Suryansh Bisen](https://github.com/Suryansh1191)
 - [Rahul Kesharwani](https://github.com/RahulKesharwani353)
 - [Hansaj Sharma](https://github.com/hansaj-sharma)
-- [Bhupesh Sinha](https://github.com/bhupeshsinha)
+- [Bhupesh Sinha](https://github.com/bhupeshsinha) -->
