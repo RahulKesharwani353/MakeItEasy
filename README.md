@@ -63,10 +63,9 @@ Implementaion of barcode provides every appointment with a unique Id for identif
 
 ## Technologies that are used for making it
 - Android Studio: For developing Our Application
-- zxing core, budiyev (libraries)
+- YOUTUBE API (libraries)
 - Firebase: For backend services like Authentication
 - Adobe xD: For user experience and Prototyping.
-  -->
 
 <!-- # Team Code Brigade (Contributors)
 - [Suryansh Bisen](https://github.com/Suryansh1191)
