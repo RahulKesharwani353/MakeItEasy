@@ -38,33 +38,41 @@ User is presented with a dashboard which conatins tabs:
 ### Screenshot
 - Dashboard
 
-<img src = "https://user-images.githubusercontent.com/65972077/119342878-4f44aa00-bcb3-11eb-8130-f0d5773ed0ac.jpg" width="200" hight ="350">      <img src = "https://user-images.githubusercontent.com/65972077/119342353-954d3e00-bcb2-11eb-9750-e14ca1be911f.jpg" width="200" hight ="350">
+<img src = "https://user-images.githubusercontent.com/65972077/119775635-813b5380-bee1-11eb-95c8-07791b136248.png" width="200" hight ="350">        <img src = "https://user-images.githubusercontent.com/65972077/119775749-a760f380-bee1-11eb-9889-7585b1549712.png" width="200" hight ="350">
 
 - Video Lecture
 
-<img src = "https://user-images.githubusercontent.com/65972077/119342926-5cfa2f80-bcb3-11eb-99a7-e4b2491b9cfb.jpg" width="200" hight ="350">       <img src = "https://user-images.githubusercontent.com/65972077/119342933-61264d00-bcb3-11eb-96d8-d3a08e8f1c77.jpg" width="200" hight ="350">
+<img src = "https://user-images.githubusercontent.com/65972077/119776042-0d4d7b00-bee2-11eb-8111-b5c31256ebaf.png" width="200" hight ="350">       <img src = "https://user-images.githubusercontent.com/65972077/119776040-0cb4e480-bee2-11eb-8c9e-587091c44c36.png" width="200" hight ="350">       <img src = "https://user-images.githubusercontent.com/65972077/119776032-0aeb2100-bee2-11eb-85c4-8b79e1ef64de.png" width="200" hight ="350">
 
+- Quiz
 
-<!-- ## Admin App
+<img src = "https://user-images.githubusercontent.com/65972077/119776245-4e458f80-bee2-11eb-9ad4-919d2c3f1d9d.png" width="200" hight ="350">       <img src = "https://user-images.githubusercontent.com/65972077/119776249-500f5300-bee2-11eb-9230-4c810938e191.png" width="200" hight ="350">       <img src = "https://user-images.githubusercontent.com/65972077/119776448-92d12b00-bee2-11eb-81ba-d8026a158d97.png" width="200" hight ="350">
+
+- Join Scholars
+
+<img src = "https://user-images.githubusercontent.com/65972077/119776450-9369c180-bee2-11eb-8406-949c95eee135.png" width="200" hight ="350">       <img src = "https://user-images.githubusercontent.com/65972077/119776444-91076780-bee2-11eb-8141-c484802b1bc0.png" width="200" hight ="350">
+
+- Notifications
+
+<img src = "https://user-images.githubusercontent.com/65972077/119776749-f3f8fe80-bee2-11eb-827e-140c7cdfe478.png" width="200" hight ="350">
+
+## Admin App
 This is the companion app for the main User App(MakeItEasy)
 
-This is the app that would be used by the hospitals to track the number of patients, thier booking dates and scan the unique code provided by the user to verify the details of the patient.
+This is the app that would be used by the Teachers to manage the number of **Video Lectures** and **Quizes**. It also allows to push new **notifications** to the users.
 
-## Dashboard
-- Appointment
-- Qr Scanner 
-
-<img src="https://user-images.githubusercontent.com/63740580/96365331-73f50400-115d-11eb-9430-81001b9cdab5.jpeg" width="200" height="350" />
-
-### Qr scanner 
-Implementaion of barcode provides every appointment with a unique Id for identification and future refence
-<!-- ![WhatsApp Image 2020-10-18 at 4 15 11 PM](https://user-images.githubusercontent.com/63740580/96365331-73f50400-115d-11eb-9430-81001b9cdab5.jpeg) -->
+### Admin Dashboard
+- Create Lecture
+- create Quiz
+- Push Nottifications
+- Add New Admin
+- Logout
 
 
 ## Technologies that are used for making it
 - Android Studio: For developing Our Application
 - YOUTUBE API (libraries)
-- Firebase: For backend services like Authentication
+- Firebase: For backend services like Authentication and Database
 - Adobe xD: For user experience and Prototyping.
 
 <!-- # Team Code Brigade (Contributors)
