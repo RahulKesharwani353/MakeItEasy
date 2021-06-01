@@ -75,8 +75,6 @@ This is the app that would be used by the Teachers to manage the number of **Vid
 - Firebase: For backend services like Authentication and Database
 - Adobe xD: For user experience and Prototyping.
 
-<!-- # Team Code Brigade (Contributors)
-- [Suryansh Bisen](https://github.com/Suryansh1191)
+# Project Mentor
 - [Rahul Kesharwani](https://github.com/RahulKesharwani353)
-- [Hansaj Sharma](https://github.com/hansaj-sharma)
-- [Bhupesh Sinha](https://github.com/bhupeshsinha) -->
+
